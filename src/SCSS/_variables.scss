@@ -1,0 +1,39 @@
+$black: #272727;
+$blue: #0070d3;
+$light-blue: #a4d3fc;
+$dark-blue: #0059a7;
+
+$font-weights: (
+  light: 300,
+  regular: 400,
+  medium: 500,
+  bold: 700,
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin flexCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

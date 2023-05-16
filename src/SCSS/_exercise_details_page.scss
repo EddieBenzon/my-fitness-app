@@ -1,0 +1,76 @@
+@import "_variables.scss";
+
+.exercise-details-page-container {
+  padding: 140px 60px 0px 60px;
+  @include tablet {
+    padding: 140px 20px 0px 20px;
+  }
+  .exercise-details-info-container {
+    color: $blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .exercise-gif {
+      width: 400px;
+      margin-right: 60px;
+      @include tablet {
+        margin-right: 30px;
+      }
+      @include mobile {
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 30px;
+      }
+    }
+    .details-info-wrapper h1 {
+      margin-bottom: 20px;
+    }
+    .details-info-wrapper {
+      display: flex;
+      flex-direction: column;
+      max-width: 600px;
+      section {
+        display: flex;
+        align-items: center;
+        margin: 20px 0px;
+        color: $black;
+        span {
+          color: white;
+          margin-left: 10px;
+          background-color: $blue;
+          padding: 4px 10px;
+          border-radius: 0.5rem;
+          font-size: 18px;
+        }
+      }
+      p {
+        color: $black;
+        font-size: 26px;
+      }
+      button {
+        align-self: flex-end;
+        border: none;
+        border-radius: 0.3rem;
+        padding: 8px;
+        background-color: $blue;
+        color: white;
+        font-size: 18px;
+        &:hover {
+          cursor: pointer;
+          background-color: $dark-blue;
+        }
+      }
+    }
+  }
+}
+
+.details-icon {
+  color: $blue;
+  width: 60px;
+  height: 60px;
+}

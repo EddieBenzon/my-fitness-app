@@ -1,0 +1,23 @@
+@import "_variables.scss", "_about.scss", "_exercise_card.scss", "_footer.scss",
+  "_navbar.scss", "_home.scss", "_search_exercises.scss",
+  "_horizontal_scrollbar.scss", "_muscle-card.scss", "_exercises.scss",
+  "_pagination_menu.scss", "_loading.scss", "_exercise_details_page.scss",
+  "_exercise_videos.scss", "_related_exercises.scss", "_about.scss",
+  "_error.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: whitesmoke;
+}
+.root-layout {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}

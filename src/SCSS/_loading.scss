@@ -1,0 +1,12 @@
+@import "_variables.scss";
+
+.loading {
+  margin: auto;
+  border: 8px solid whitesmoke;
+  border-top-color: $light-blue;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: 2s linear infinite;
+  animation-name: spin;
+}
